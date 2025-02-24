@@ -2,7 +2,7 @@
 
 import { usePrivy } from "@privy-io/react-auth";
 import LoginButton from "./_components/login";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import LogoutButton from "./_components/logout";
 import Navbar from "./_components/navbar";
