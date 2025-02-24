@@ -60,7 +60,7 @@ export default {
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
 		},
-			'retro-blue': '#2558DC',
+			'retro-blue': '#1E90FF',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
