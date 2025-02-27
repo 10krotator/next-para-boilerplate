@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import PrivyProviders from "./providers/PrivyProvider";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./_components/app-sidebar";
+import { AuthProvider } from "./context/auth";
+// import { ParaProviders } from "./providers/ParaProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,13 +31,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <PrivyProviders>
-          <SidebarProvider>
-            <AppSidebar />
+        {/* <ParaProviders> */}
+          <AuthProvider>
+            <SidebarProvider>
+              <AppSidebar />
               <SidebarTrigger />
               {children}
-          </SidebarProvider>
-        </PrivyProviders>
+            </SidebarProvider>
+          </AuthProvider>
+        {/* </ParaProviders> */}
       </body>
     </html>
   );
