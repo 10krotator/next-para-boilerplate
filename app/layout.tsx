@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "swiift.com",
-  description: "transfers stables with your phone number in 1 click",
+  title: "next-para-app",
+  description: "next-para-app",
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, Search, Settings, ArrowUpRight } from "lucide-react"
+import { Home, Search, Settings, Plus } from "lucide-react"
 
 import {
     Sidebar,
@@ -29,12 +29,12 @@ import Twitter from "@/public/twitter-x.svg"
         icon: Home,
     },
     {
-        title: "Transfers",
+        title: "Create",
         url: "#",
-        icon: ArrowUpRight,
+        icon: Plus,
     },
     {
-        title: "Search address book",
+        title: "Search",
         url: "#",
         icon: Search,
     },
@@ -51,8 +51,8 @@ export function AppSidebar() {
         <SidebarContent>
             <SidebarHeader>
                 <div className="flex items-center gap-3">
-                    <Image src={Logo} alt="swiift.com" width={40} height={40}/>
-                    <span className="text-3xl font-bold leading-tight tracking-tight">swiift</span>
+                    <Image src={Logo} alt="next-para-app" width={40} height={40}/>
+                    <span className="text-3xl font-bold leading-tight tracking-tight">next-para-app</span>
                 </div>
             </SidebarHeader>
             <SidebarGroup>
@@ -75,10 +75,10 @@ export function AppSidebar() {
         </SidebarContent>
         <SidebarFooter>
             <div className="flex items-center justify-end gap-4 py-4 px-2">
-                <Link href="https://t.me/">
+                <Link href="https://t.me/yourgrouplink">
                     <Image src={Telegram} alt="Telegram" className="dark:invert" width={24} height={24} />
                 </Link>
-                <Link href="https://x.com/_swiift">
+                <Link href="https://x.com/_yourappname">
                     <Image src={Twitter} alt="Twitter" className="dark:invert" width={24} height={24} />
                 </Link>
             </div>
